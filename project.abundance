@@ -1,15 +1,118 @@
 {
-    "atomType": "Molecule",
-    "name": "Concentric_Circles",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1170",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Unitless",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "Concentric_Circles",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1170",
+  "ioValues": [
+    {
+      "name": "OD",
+      "ioValue": 30,
+      "currentEquation": "30"
+    },
+    {
+      "name": "ID",
+      "ioValue": 20,
+      "currentEquation": "20"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-1171",
+      "ioValues": []
+    },
+    {
+      "atomType": "Input",
+      "name": "OD",
+      "x": 0.07755,
+      "y": 0.47,
+      "uniqueID": "id-1173",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "name": "ID",
+      "x": 0.07755,
+      "y": 0.705,
+      "uniqueID": "id-1176",
+      "ioValues": [],
+      "type": "number"
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.460559796437659,
+      "y": 0.42567567567567566,
+      "uniqueID": "id-1179",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 30
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.44529262086514,
+      "y": 0.7263513513513513,
+      "uniqueID": "id-1182",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 20
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "name": "Difference",
+      "x": 0.6615776081424937,
+      "y": 0.5506756756756757,
+      "uniqueID": "id-1185",
+      "ioValues": []
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "number or geometry",
+      "ap2Name": "diameter",
+      "ap1ID": "id-1173",
+      "ap2ID": "id-1179"
+    },
+    {
+      "ap1Name": "number or geometry",
+      "ap2Name": "diameter",
+      "ap1ID": "id-1176",
+      "ap2ID": "id-1182"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry1",
+      "ap1ID": "id-1179",
+      "ap2ID": "id-1185"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry2",
+      "ap1ID": "id-1182",
+      "ap2ID": "id-1185"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-1185",
+      "ap2ID": "id-1171"
+    }
+  ],
+  "unitsKey": "Unitless",
+  "fileTypeVersion": 1,
+  "compiledBom": [],
+  "filetypeVersion": 1
 }
